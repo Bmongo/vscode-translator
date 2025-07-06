@@ -9,13 +9,25 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
   "main": "./dist/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "contributes": {
     "commands": [
       {
-        "command": "translator.helloWorld",
-        "title": "Hello World",
+        "command": "translator.toChinese",
+        "title": "Translate to Chinese",
+        "category": "Translator"
+      },
+      {
+        "command": "translator.toEnglish",
+        "title": "Translate to English",
+        "category": "Translator"
+      },
+      {
+        "command": "translator.openTranslationPanel",
+        "title": "Open Translation Panel",
         "category": "Translator"
       }
     ]
@@ -74,5 +86,8 @@
     "prettier": "3.6.2",
     "typescript": "^5.8.3"
   },
-  "packageManager": "pnpm@10.12.4"
+  "packageManager": "pnpm@10.12.4",
+  "dependencies": {
+    "got": "^12.1.0"
+  }
 }
