@@ -12,6 +12,9 @@ export abstract class Translator {
   /** 翻译器配置 */
   config: TranslatorOptions
 
+  /** 翻译器语言映射 */
+  langMap?: (type: string) => string
+
   /**
    * 创建翻译器实例
    * @param config 翻译器配置

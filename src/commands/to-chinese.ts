@@ -16,7 +16,7 @@ const callback = async () => {
     const result = await vscode.window.showQuickPick([info])
     if (result) {
       vscode.env.clipboard.writeText(result)
-      logger.info(`Translated text copied to clipboard: ${result}`)
+      logger.info(`Translated text copied to clipboard: ${result}`, false)
     }
   } catch (error) {
     logger.error(error)

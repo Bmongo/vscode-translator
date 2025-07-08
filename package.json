@@ -88,6 +88,8 @@
   },
   "packageManager": "pnpm@10.12.4",
   "dependencies": {
+    "bing-translate-api": "^4.1.0",
+    "franc": "^6.2.0",
     "got": "^12.1.0"
   }
 }

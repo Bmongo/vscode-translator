@@ -1,11 +1,13 @@
 import * as vscode from 'vscode'
 
 export const logger = {
-  info: (message: string) => {
+  info: (message: string, mute = true) => {
     console.info(`[TRANSLATOR INFO] ${message}`)
-    vscode.window.showInformationMessage(message)
+    if (!mute) {
+      vscode.window.showInformationMessage(message)
+    }
   },
-  error: (message: any) => {
+  error: (message: any, mute = false) => {
     let msg = ''
     if (typeof message === 'string') {
       msg = message
@@ -13,6 +15,8 @@ export const logger = {
       msg = message?.message || message?.toString() || 'Unknown error'
     }
     console.error(`[TRANSLATOR ERROR] ${message}`)
-    vscode.window.showErrorMessage(msg)
+    if (!mute) {
+      vscode.window.showErrorMessage(msg)
+    }
   },
 }
