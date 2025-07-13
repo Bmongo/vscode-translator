@@ -2,6 +2,7 @@ import { TranslatorOptions, TRANSLATOR_TYPE } from './types'
 import { GoogleTranslator } from './google-translator'
 import { BingTranslator } from './bing-translator'
 import { getAllExtensionConfig } from '../vscode-config'
+import { t } from '@/lang'
 
 interface TranslatorProps extends TranslatorOptions {
   translator: (typeof TRANSLATOR_TYPE)[keyof typeof TRANSLATOR_TYPE]
@@ -17,7 +18,7 @@ export const getTranslator = (config: Partial<TranslatorProps> = {}) => {
     case TRANSLATOR_TYPE.GOOGLE:
       return new GoogleTranslator({ from, to })
     default:
-      throw new Error(`Unsupported translator type: ${config.translator}`)
+      throw new Error(t('unsupported_translator_type', { translatorType: translator }))
   }
 }
 

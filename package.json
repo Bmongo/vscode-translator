@@ -14,6 +14,36 @@
     "onStartupFinished"
   ],
   "contributes": {
+    "configuration": {
+      "title": "Translator",
+      "type": "object",
+      "properties": {
+        "translator.translator": {
+          "type": "string",
+          "default": "bing",
+          "enum": [
+            "bing",
+            "google"
+          ]
+        },
+        "translator.from": {
+          "type": "string",
+          "default": "en",
+          "enum": [
+            "zh-CN",
+            "en"
+          ]
+        },
+        "translator.to": {
+          "type": "string",
+          "default": "zh-CN",
+          "enum": [
+            "zh-CN",
+            "en"
+          ]
+        }
+      }
+    },
     "commands": [
       {
         "command": "translator.toChinese",

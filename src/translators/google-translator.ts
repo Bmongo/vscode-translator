@@ -1,5 +1,6 @@
 import got from 'got'
 import { Translator, TranslatorOptions } from './types'
+import { t } from '@/lang'
 
 interface GoogleTranslateResponse {
   src: string
@@ -31,7 +32,7 @@ const translate = async (text: string, from: string, to: string) => {
     })
     .json()
   if (!result?.sentences?.length) {
-    throw new Error('Translation failed: No sentences found in response')
+    throw new Error(t('no_sentences_response'))
   }
   return result.sentences.map(sentence => sentence.trans).join(' ')
 }
@@ -46,7 +47,7 @@ export class GoogleTranslator implements Translator {
   async translate(text: string): Promise<string> {
     const { from, to } = this.config
     if (!text) {
-      throw new Error('No text provided for translation')
+      throw new Error(t('no_text_for_translation'))
     }
     return await translate(text, from, to)
   }

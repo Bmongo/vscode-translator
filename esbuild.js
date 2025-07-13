@@ -35,6 +35,9 @@ async function main() {
     outfile: 'dist/extension.js',
     external: ['vscode'],
     logLevel: 'silent',
+    loader: {
+      '.html': 'text',
+    },
     plugins: [
       /* add to the end of plugins array */
       esbuildProblemMatcherPlugin,

@@ -1,0 +1,16 @@
+{
+  "input_translate_to_chinese_prompt": "输入要翻译成中文的文本",
+  "input_translate_to_english_prompt": "输入要翻译成英文的文本",
+  "type_here": "在此处输入文本",
+  "translation_result_text": "翻译结果",
+  "untranslated_text": "原文",
+  "no_text_for_translation": "没有提供要翻译的文本",
+  "no_sentences_response": "没有获取到翻译结果",
+  "unsupported_translator_type": "不支持的翻译器类型: {{translatorType}}",
+  "translate": "翻译",
+  "panel_title": "翻译面板",
+  "panel_input_placeholder": "请输入需要翻译的文本...",
+  "panel_output_placeholder": "翻译结果将显示在这里...",
+  "choose_translate_result_to_clipboard": "选择翻译结果后按回车复制到剪贴板",
+  "clipboard_copied": "已复制翻译结果到剪贴板: {{text}}"
+}

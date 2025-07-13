@@ -1,0 +1,16 @@
+{
+  "input_translate_prompt": "Enter text to translate to chinese",
+  "input_translate_to_english_prompt": "Enter text to translate to english",
+  "type_here": "Type here...",
+  "translation_result_text": "Translation result",
+  "untranslated_text": "Original text",
+  "no_text_for_translation": "No text provided for translation",
+  "no_sentences_response": "Translation failed: No sentences found in response",
+  "unsupported_translator_type": "Unsupported translator type: {{translatorType}}",
+  "translate": "translate",
+  "panel_title": "Translator panel",
+  "panel_input_placeholder": "Enter text to translate...",
+  "panel_output_placeholder": "Translation result will be displayed here...",
+  "choose_translate_result_to_clipboard": "Choose translation result to copy to clipboard",
+  "clipboard_copied": "Translated text copied to clipboard: {{text}}"
+}

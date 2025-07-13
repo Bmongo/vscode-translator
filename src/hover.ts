@@ -2,7 +2,8 @@ import * as vscode from 'vscode'
 import { getTranslator } from './translators'
 import { logger } from './utils/logger'
 import { detectTextLanguage } from './utils/lang'
-import { getAllExtensionConfig } from './vscode-config'
+import { getAllExtensionConfig, LANGUAGE } from './vscode-config'
+import { t } from './lang'
 
 const getTargetLangType = (text: string) => {
   const { from, to } = getAllExtensionConfig()
@@ -27,11 +28,19 @@ export const registerHover = (context: vscode.ExtensionContext) => {
       const needTranslate = selectText || word
       const targetType = getTargetLangType(needTranslate)
       try {
-        const result = await getTranslator({ to: targetType }).translate(needTranslate)
+        const result = await getTranslator({ from: LANGUAGE.AUTO, to: targetType }).translate(needTranslate)
         if (result) {
+          logger.info(`Hover translation result: ${result}, to: ${targetType}`)
+          const showMsgs = new vscode.MarkdownString()
+          showMsgs.appendMarkdown(`**${t('translation_result_text')}**`)
+          showMsgs.appendText('\n')
+          showMsgs.appendMarkdown(result)
+          showMsgs.appendText('\n')
+          showMsgs.appendMarkdown(`**${t('untranslated_text')}**`)
+          showMsgs.appendText('\n')
+          showMsgs.appendMarkdown(needTranslate)
+          return new vscode.Hover(showMsgs)
         }
-        logger.info(`Hover translation: ${result}`)
-        return new vscode.Hover(result)
       } catch (e: any) {
         const msg = typeof e === 'string' ? e : e?.message
         logger.error(`Hover translation error: ${msg}`, true)

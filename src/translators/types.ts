@@ -1,11 +1,13 @@
+import { LANGUAGE } from '@/vscode-config'
+
 export const TRANSLATOR_TYPE = {
   GOOGLE: 'google',
   BING: 'bing',
 } as const
 
 export interface TranslatorOptions {
-  from: string
-  to: string
+  from: LANGUAGE
+  to: LANGUAGE
 }
 
 export abstract class Translator {
@@ -13,7 +15,7 @@ export abstract class Translator {
   config: TranslatorOptions
 
   /** 翻译器语言映射 */
-  langMap?: (type: string) => string
+  langMap?: (type: LANGUAGE) => string
 
   /**
    * 创建翻译器实例
