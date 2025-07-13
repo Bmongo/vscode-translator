@@ -1,71 +1,64 @@
-# translator README
+# Vscode Translation Plugin
 
-This is the README for your extension "translator". After writing up a brief description, we recommend including the following sections.
+For various translation scenarios in daily development
+
+[中文文档](./README.zh-CN.md)
+
+![Licence](https://img.shields.io/github/license/intellism/vscode-comment-translate.svg)
+
+## Introduction
+
+During development, we often need to translate words, code snippets, and comments, especially in open-source projects where there are many English comments. We frequently need to find translation tools for this purpose. This plugin is designed to solve this problem, supporting Google and Bing translation services (more services will be added in the future).
+
+![Introduction](./doc/images/features.gif)
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Hover Translation
 
-For example if there is an image subfolder under your extension project workspace:
+- When you hover over a word (no need to select it), the translation result and original text will be displayed
 
-\!\[feature X\]\(images/feature-x.png\)
+- When you select a word, the translation result and original text will be displayed
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![HoverWord](./doc/images/hover_word.gif)
 
-## Requirements
+### Convert to English
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Trigger English translation through the `translator.toEnglish` command
 
-## Extension Settings
+- Enter Chinese text and press Enter to convert the content to English
+- The result not only includes the translated content but also converts it into related English variables, including camelCase, PascalCase, snake_case, and kebab-case variables. You can select the relevant content and press Enter to use it
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+![ChineseToEnglish](./doc/images/chinese_to_english.gif)
 
-For example:
+### Convert to Chinese
 
-This extension contributes the following settings:
+Trigger Chinese translation through the `translator.toChinese` command
 
-- `myExtension.enable`: Enable/disable this extension.
-- `myExtension.thing`: Set to `blah` to do something.
+- Enter English text and press Enter to convert the content to Chinese
 
-## Known Issues
+![EnglishToChinese](./doc/images/english_to_chinese.gif)
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+### Translation Panel
 
-## Release Notes
+Open the translation panel through the `translator.openTranslationPanel` command
 
-Users appreciate release notes as you update your extension.
+- On this page, you can select specific translation languages and trigger translation by clicking the translate button
 
-### 1.0.0
+![OpenPanel](./doc/images/open_panel.gif)
 
-Initial release of ...
+## Configuration
 
-### 1.0.1
+`translator.translator`: Translation service, you can choose Google or Bing
 
-Fixed issue #.
+`translator.from`: Source language for translation, you can choose Chinese or English
 
-### 1.1.0
+`translator.to`: Target language for translation, you can choose Chinese or English
 
-Added features X, Y, and Z.
+## Support
 
----
+If this plugin is helpful to you, you can support us in the following ways:
 
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- Give us a star on Github [Bmongo/vscode-translator](https://github.com/Bmongo/vscode-translator)
+- Provide feedback on issues or suggestions
+- Recommend this plugin to your friends/colleagues

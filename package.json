@@ -1,8 +1,27 @@
 {
-  "name": "vscode-translator",
-  "displayName": "Translator",
-  "description": "Translate for Chinese",
+  "name": "vscode-dev-translator",
+  "displayName": "Dev Translator",
+  "description": "Translate for developers",
   "version": "0.0.1",
+  "publisher": "bmongo",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://github.com/Bmongo/vscode-translator/blob/main/README.md",
+  "icon": "./doc/images/vscode-icon.png",
+  "bugs": {
+    "url": "https://github.com/Bmongo/vscode-translator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bmongo/vscode-translator"
+  },
+  "keywords": [
+    "vscode extension",
+    "translate",
+    "translator",
+    "翻译",
+    "变量",
+    "注释"
+  ],
   "engines": {
     "vscode": "^1.101.0"
   },
