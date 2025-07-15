@@ -1,4 +1,6 @@
 {
+  "choose_target_language_to_be_translated_into": "Choose target language to be translated into",
+  "input_text_to_translate": "Enter text to translate",
   "input_translate_to_chinese_prompt": "Enter text to translate to chinese",
   "input_translate_to_english_prompt": "Enter text to translate to english",
   "type_here": "Type here...",

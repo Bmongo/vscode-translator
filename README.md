@@ -1,4 +1,4 @@
-# Vscode Translation Plugin
+# Vscode Dev Translator Extension
 
 For various translation scenarios in daily development
 
@@ -24,7 +24,7 @@ During development, we often need to translate words, code snippets, and comment
 
 ### Convert to English
 
-Trigger English translation through the `translator.toEnglish` command
+Trigger English translation through the `devTranslator.toEnglish` command
 
 - Enter Chinese text and press Enter to convert the content to English
 - The result not only includes the translated content but also converts it into related English variables, including camelCase, PascalCase, snake_case, and kebab-case variables. You can select the relevant content and press Enter to use it
@@ -33,15 +33,23 @@ Trigger English translation through the `translator.toEnglish` command
 
 ### Convert to Chinese
 
-Trigger Chinese translation through the `translator.toChinese` command
+Trigger Chinese translation through the `devTranslator.toChinese` command
 
 - Enter English text and press Enter to convert the content to Chinese
 
 ![EnglishToChinese](./doc/images/english_to_chinese.gif)
 
+### Convert to Specific Language
+
+Trigger translation to a specific language through the `devTranslator.toOtherLanguage` command
+
+- First select the target language, press Enter, then input the content to be translated, and press Enter again to trigger the translation
+
+![ToOtherLanguage](./doc/images/to_other_language.gif)
+
 ### Translation Panel
 
-Open the translation panel through the `translator.openTranslationPanel` command
+Open the translation panel through the `devTranslator.openTranslationPanel` command
 
 - On this page, you can select specific translation languages and trigger translation by clicking the translate button
 
@@ -49,13 +57,13 @@ Open the translation panel through the `translator.openTranslationPanel` command
 
 ## Configuration
 
-`translator.translator`: Translation service, you can choose Google or Bing
+`devTranslator.translator`: Translation service, you can choose Google or Bing
 
-`translator.from`: Source language for translation, you can choose Chinese or English
+`devTranslator.from`: Source language for translation, you can choose Chinese or English
 
-`translator.to`: Target language for translation, you can choose Chinese or English
+`devTranslator.to`: Target language for translation, you can choose Chinese or English
 
-`translator.language`: Default is the current VSCode language, this configuration affects the interaction language of the plugin
+`devTranslator.language`: Default is the current VSCode language, this configuration affects the interaction language of the plugin
 
 ## Supported Languages
 

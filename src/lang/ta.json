@@ -1,4 +1,6 @@
 {
+  "choose_target_language_to_be_translated_into": "மொழிபெயர்க்க போக்குவரத்து வழியில் மொழியை தேர்வுசெய்யவும்",
+  "input_text_to_translate": "மொழிபெயர்க்க உரையை உள்ளிடவும்",
   "input_translate_to_chinese_prompt": "சீன மொழிக்கு மொழிபெயர்க்க உரையை உள்ளிடவும்",
   "input_translate_to_english_prompt": "ஆங்கிலத்திற்கு மொழிபெயர்க்க உரையை உள்ளிடவும்",
   "type_here": "இங்கே தட்டச்சு செய்யவும்...",

@@ -21,7 +21,7 @@ export const SUPPORTED_LANGUAGES_FRANC_KEY_MAP: Record<string, string> = {
   tam: LANGUAGE.TA,
 }
 
-const EXTENSION_CONFIG_PREFIX = 'translator'
+const EXTENSION_CONFIG_PREFIX = 'devTranslator'
 
 const DEFAULT_CONFIG = {
   translator: TRANSLATOR_TYPE.BING,

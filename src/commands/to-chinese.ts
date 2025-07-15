@@ -31,6 +31,6 @@ const callback = async () => {
 }
 
 export const ToChineseCommandConfig = {
-  command: 'translator.toChinese',
+  command: 'devTranslator.toChinese',
   callback,
 }

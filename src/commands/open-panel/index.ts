@@ -42,6 +42,6 @@ const callback = () => {
 }
 
 export const OpenPanelCommandConfig = {
-  command: 'translator.openTranslationPanel',
+  command: 'devTranslator.openTranslationPanel',
   callback,
 }

@@ -2,7 +2,7 @@
   "name": "vscode-dev-translator",
   "displayName": "Dev Translator",
   "description": "Translate for developers",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "bmongo",
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://github.com/Bmongo/vscode-translator/blob/main/README.md",
@@ -37,7 +37,7 @@
       "title": "Dev Translator",
       "type": "object",
       "properties": {
-        "translator.translator": {
+        "devTranslator.translator": {
           "type": "string",
           "default": "bing",
           "enum": [
@@ -45,7 +45,7 @@
             "google"
           ]
         },
-        "translator.from": {
+        "devTranslator.from": {
           "type": "string",
           "default": "auto",
           "enum": [
@@ -55,7 +55,7 @@
             "ta"
           ]
         },
-        "translator.to": {
+        "devTranslator.to": {
           "type": "string",
           "default": "zh-CN",
           "enum": [
@@ -64,7 +64,7 @@
             "ta"
           ]
         },
-        "translator.language": {
+        "devTranslator.language": {
           "type": "string",
           "default": "auto",
           "description": "The language of the extension will affect the language of the extension",
@@ -79,19 +79,24 @@
     },
     "commands": [
       {
-        "command": "translator.toChinese",
-        "title": "Translate to Chinese",
-        "category": "Translator"
-      },
-      {
-        "command": "translator.toEnglish",
+        "command": "devTranslator.toEnglish",
         "title": "Translate to English",
-        "category": "Translator"
+        "category": "Dev Translator"
       },
       {
-        "command": "translator.openTranslationPanel",
+        "command": "devTranslator.toChinese",
+        "title": "Translate to Chinese",
+        "category": "Dev Translator"
+      },
+      {
+        "command": "devTranslator.toOtherLanguage",
+        "title": "Translate to ...",
+        "category": "Dev Translator"
+      },
+      {
+        "command": "devTranslator.openTranslationPanel",
         "title": "Open Translation Panel",
-        "category": "Translator"
+        "category": "Dev Translator"
       }
     ]
   },

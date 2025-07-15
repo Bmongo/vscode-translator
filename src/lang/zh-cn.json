@@ -1,4 +1,6 @@
 {
+  "choose_target_language_to_be_translated_into": "选择要翻译的目标语言",
+  "input_text_to_translate": "输入要翻译的文本",
   "input_translate_to_chinese_prompt": "输入要翻译成中文的文本",
   "input_translate_to_english_prompt": "输入要翻译成英文的文本",
   "type_here": "在此处输入文本",

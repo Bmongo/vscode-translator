@@ -24,7 +24,7 @@
 
 ### 转换成英文
 
-通过 `translator.toEnglish` 命令触发转英文
+通过 `devTranslator.toEnglish` 命令触发转英文
 
 - 输入中文后按回车将对应内容转换为英文
 - 结果不仅包含翻译的内容，还会将翻译内容转换为相关的英文变量，包括大小驼峰、下划线、中划线变量，可以选中相关内容，按回车后负值内容
@@ -33,15 +33,23 @@
 
 ### 转换成中文
 
-通过 `translator.toChinese` 命令触发转中文
+通过 `devTranslator.toChinese` 命令触发转中文
 
 - 输入英文后按回车将对应内容转换为中文
 
 ![EnglishToChinese](./doc/images/english_to_chinese.gif)
 
+### 转换成指定语言
+
+通过 `devTranslator.toOtherLanguage` 命令触发转指定语言
+
+- 首先选择目标语言，按回车，然后输入需要翻译的内容，按回车后触发翻译
+
+![ToOtherLanguage](./doc/images/to_other_language.gif)
+
 ### 翻译面板翻译
 
-通过 `translator.openTranslationPanel` 命令打开翻译面板
+通过 `devTranslator.openTranslationPanel` 命令打开翻译面板
 
 - 在该页面中可以选择指定翻译语种，点击翻译后触发翻译
 
@@ -49,13 +57,13 @@
 
 ## 配置项
 
-`translator.translator`: 翻译服务，可选择 Google 或者 Bing
+`devTranslator.translator`: 翻译服务，可选择 Google 或者 Bing
 
-`translator.from`: 翻译源语言
+`devTranslator.from`: 翻译源语言
 
-`translator.to`: 翻译目标语言
+`devTranslator.to`: 翻译目标语言
 
-`translator.language`: 默认为当前vscode的语言，该配置会影响插件的交互语言
+`devTranslator.language`: 默认为当前vscode的语言，该配置会影响插件的交互语言
 
 ## 支持语言
 
