@@ -2,7 +2,7 @@
 
 用于日常开发中的各种需要翻译的场景
 
-[English Document](./README.md)
+[English Document](./README.md) | [தமிழ் ஆவணம்](./README.ta.md)
 
 ![Licence](https://img.shields.io/github/license/intellism/vscode-comment-translate.svg)
 
@@ -51,9 +51,17 @@
 
 `translator.translator`: 翻译服务，可选择 Google 或者 Bing
 
-`translator.from`: 翻译源语言，可选择中文或者英文
+`translator.from`: 翻译源语言
 
-`translator.to`: 翻译目标语言，可选择中文或者英文
+`translator.to`: 翻译目标语言
+
+`translator.language`: 默认为当前vscode的语言，该配置会影响插件的交互语言
+
+## 支持语言
+
+- 简体中文
+- 英语
+- 泰米尔语
 
 ## 支持
 

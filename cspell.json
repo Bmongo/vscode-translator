@@ -10,5 +10,12 @@
       "addWords": true
     }
   ],
-  "ignorePaths": ["**/node_modules/**", "**/dist/**", "**/package.json", "**/*.md", "eslint.config.mjs"]
+  "ignorePaths": [
+    "**/lang/*.json",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/package.json",
+    "**/*.md",
+    "eslint.config.mjs"
+  ]
 }

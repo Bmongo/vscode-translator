@@ -2,7 +2,7 @@
 
 For various translation scenarios in daily development
 
-[中文文档](./README.zh-CN.md)
+[中文文档](./README.zh-CN.md) | [தமிழ் ஆவணம்](./README.ta.md)
 
 ![Licence](https://img.shields.io/github/license/intellism/vscode-comment-translate.svg)
 
@@ -54,6 +54,14 @@ Open the translation panel through the `translator.openTranslationPanel` command
 `translator.from`: Source language for translation, you can choose Chinese or English
 
 `translator.to`: Target language for translation, you can choose Chinese or English
+
+`translator.language`: Default is the current VSCode language, this configuration affects the interaction language of the plugin
+
+## Supported Languages
+
+- English
+- Simplified Chinese
+- Tamil
 
 ## Support
 

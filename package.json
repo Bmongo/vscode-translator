@@ -2,7 +2,7 @@
   "name": "vscode-dev-translator",
   "displayName": "Dev Translator",
   "description": "Translate for developers",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publisher": "bmongo",
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://github.com/Bmongo/vscode-translator/blob/main/README.md",
@@ -34,7 +34,7 @@
   ],
   "contributes": {
     "configuration": {
-      "title": "Translator",
+      "title": "Dev Translator",
       "type": "object",
       "properties": {
         "translator.translator": {
@@ -47,10 +47,12 @@
         },
         "translator.from": {
           "type": "string",
-          "default": "en",
+          "default": "auto",
           "enum": [
+            "auto",
             "zh-CN",
-            "en"
+            "en",
+            "ta"
           ]
         },
         "translator.to": {
@@ -58,7 +60,19 @@
           "default": "zh-CN",
           "enum": [
             "zh-CN",
-            "en"
+            "en",
+            "ta"
+          ]
+        },
+        "translator.language": {
+          "type": "string",
+          "default": "auto",
+          "description": "The language of the extension will affect the language of the extension",
+          "enum": [
+            "auto",
+            "zh-cn",
+            "en",
+            "ta"
           ]
         }
       }

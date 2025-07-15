@@ -1,5 +1,5 @@
 {
-  "input_translate_prompt": "Enter text to translate to chinese",
+  "input_translate_to_chinese_prompt": "Enter text to translate to chinese",
   "input_translate_to_english_prompt": "Enter text to translate to english",
   "type_here": "Type here...",
   "translation_result_text": "Translation result",

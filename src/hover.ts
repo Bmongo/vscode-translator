@@ -9,7 +9,7 @@ const getTargetLangType = (text: string) => {
   const { from, to } = getAllExtensionConfig()
   const textType = detectTextLanguage(text)
   let targetType = to
-  if (textType === to) {
+  if (textType === to && from !== LANGUAGE.AUTO) {
     targetType = from
   }
   return targetType

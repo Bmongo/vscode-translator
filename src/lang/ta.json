@@ -1,0 +1,16 @@
+{
+  "input_translate_to_chinese_prompt": "சீன மொழிக்கு மொழிபெயர்க்க உரையை உள்ளிடவும்",
+  "input_translate_to_english_prompt": "ஆங்கிலத்திற்கு மொழிபெயர்க்க உரையை உள்ளிடவும்",
+  "type_here": "இங்கே தட்டச்சு செய்யவும்...",
+  "translation_result_text": "மொழிபெயர்ப்பு முடிவு",
+  "untranslated_text": "அசல் உரை",
+  "no_text_for_translation": "மொழிபெயர்ப்புக்கு எந்த உரையும் வழங்கப்படவில்லை",
+  "no_sentences_response": "மொழிபெயர்ப்பு தோல்வி: பதிலில் எந்த வாக்கியங்களும் கிடைக்கவில்லை",
+  "unsupported_translator_type": "ஆதரிக்கப்படாத மொழிபெயர்ப்பாளர் வகை: {{translatorType}}",
+  "translate": "மொழிபெயர்",
+  "panel_title": "மொழிபெயர்ப்பு பலகை",
+  "panel_input_placeholder": "மொழிபெயர்க்க உரையை உள்ளிடவும்...",
+  "panel_output_placeholder": "மொழிபெயர்ப்பு முடிவு இங்கே காட்டப்படும்...",
+  "choose_translate_result_to_clipboard": "கிளிப்போர்டுக்கு நகலெடுக்க மொழிபெயர்ப்பு முடிவைத் தேர்ந்தெடுக்கவும்",
+  "clipboard_copied": "மொழிபெயர்க்கப்பட்ட உரை கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது: {{text}}"
+}
