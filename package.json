@@ -15,12 +15,28 @@
     "url": "git+https://github.com/Bmongo/vscode-translator"
   },
   "keywords": [
-    "vscode extension",
     "translate",
     "translator",
-    "翻译",
-    "变量",
-    "注释"
+    "translation",
+    "comment translation",
+    "variable translation",
+    "变量翻译",
+    "注释翻译",
+    "代码翻译",
+    "tamil",
+    "ta",
+    "ta-IN",
+    "ta-LK",
+    "tamil-translation",
+    "tamil-language",
+    "south-asian-languages",
+    "localization",
+    "i18n",
+    "l10n",
+    "unicode",
+    "vscode-extension",
+    "developer-tools",
+    "language-support"
   ],
   "engines": {
     "vscode": "^1.101.0"
