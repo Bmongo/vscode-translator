@@ -2,11 +2,11 @@
   "name": "vscode-dev-translator",
   "displayName": "Dev Translator",
   "description": "Translate for developers",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "publisher": "bmongo",
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://github.com/Bmongo/vscode-translator/blob/main/README.md",
-  "icon": "./doc/images/vscode-icon.png",
+  "icon": "icon.png",
   "bugs": {
     "url": "https://github.com/Bmongo/vscode-translator/issues"
   },
