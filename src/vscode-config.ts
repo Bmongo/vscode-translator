@@ -27,6 +27,7 @@ const DEFAULT_CONFIG = {
   translator: TRANSLATOR_TYPE.BING,
   from: LANGUAGE.EN,
   to: LANGUAGE.CN,
+  language: LANGUAGE.AUTO,
 }
 
 export const getAllExtensionConfig = () => {
