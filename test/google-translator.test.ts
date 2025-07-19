@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { GoogleTranslator } from '../src/translators/google-translator'
 import got from 'got'
+import { GoogleTranslator } from '../src/translators/google-translator'
 import { LANGUAGE } from '../src/vscode-config'
 import * as lang from '../src/lang'
 
@@ -35,7 +35,7 @@ describe('GoogleTranslator', () => {
   })
 
   it('should call google translate api with correct parameters and return translation', async () => {
-    vi.mocked(got.post().json).mockResolvedValueOnce({
+    vi.mocked(got.post('').json).mockResolvedValueOnce({
       sentences: [{ trans: '你好', orig: 'hello' }],
     })
     const result = await translator.translate('hello')
@@ -53,7 +53,7 @@ describe('GoogleTranslator', () => {
   })
 
   it('should throw an error if no sentences are returned', async () => {
-    vi.mocked(got.post().json).mockResolvedValueOnce({ sentences: [] })
+    vi.mocked(got.post('').json).mockResolvedValueOnce({ sentences: [] })
     await expect(translator.translate('hello')).rejects.toThrow('no_sentences_response')
     expect(lang.t).toHaveBeenCalledWith('no_sentences_response')
   })

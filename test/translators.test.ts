@@ -1,6 +1,5 @@
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { getTranslator, TRANSLATOR_TYPE } from '../src/translators'
-import * as vscodeConfig from '../src/vscode-config'
 import { GoogleTranslator } from '../src/translators/google-translator'
 import { BingTranslator } from '../src/translators/bing-translator'
 import * as lang from '../src/lang'

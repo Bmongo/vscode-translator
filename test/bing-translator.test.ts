@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { BingTranslator } from '../src/translators/bing-translator'
 import { translate } from 'bing-translate-api'
+import { BingTranslator } from '../src/translators/bing-translator'
 import { LANGUAGE } from '../src/vscode-config'
 import * as lang from '../src/lang'
 
@@ -33,14 +33,16 @@ describe('BingTranslator', () => {
   })
 
   it('should call bing-translate-api with correct parameters and return translation', async () => {
-    vi.mocked(translate).mockResolvedValueOnce({ translation: '你好' })
+    vi.mocked(translate).mockResolvedValueOnce({
+      translation: '你好',
+    } as any)
     const result = await translator.translate('hello')
     expect(translate).toHaveBeenCalledWith('hello', 'en', 'zh-Hans')
     expect(result).toBe('你好')
   })
 
   it('should throw an error if no translation is returned', async () => {
-    vi.mocked(translate).mockResolvedValueOnce({ translation: undefined })
+    vi.mocked(translate).mockResolvedValueOnce({ translation: undefined } as any)
     await expect(translator.translate('hello')).rejects.toThrow('no_sentences_response')
     expect(lang.t).toHaveBeenCalledWith('no_sentences_response')
   })

@@ -1,13 +1,13 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import * as configModule from '@/vscode-config'
+import { describe, it, expect, vi, beforeEach, type Mock } from 'vitest'
+import * as configModule from '../src/vscode-config'
 import { t } from '../src/lang'
 
-vi.mock('@/vscode-config', () => ({
+vi.mock('../src/vscode-config', () => ({
   getExtensionConfig: vi.fn(),
 }))
 
 describe('i18n translation', () => {
-  const getExtensionConfig = configModule.getExtensionConfig as unknown as vi.Mock
+  const getExtensionConfig = configModule.getExtensionConfig as Mock
 
   beforeEach(() => {
     vi.clearAllMocks()
