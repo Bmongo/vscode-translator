@@ -2,7 +2,7 @@
   "name": "vscode-dev-translator",
   "displayName": "Dev Translator",
   "description": "Translate for developers",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "bmongo",
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://github.com/Bmongo/vscode-translator/blob/main/README.md",
@@ -132,7 +132,8 @@
     "prepare": "husky",
     "commitlint": "commitlint --edit",
     "commit": "git-cz",
-    "cspell": "cspell lint --dot --gitignore --color --cache --show-suggestions src/**"
+    "cspell": "cspell lint --dot --gitignore --color --cache --show-suggestions src/**",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -n conventional-changelog.config.js && git add CHANGELOG.md"
   },
   "lint-staged": {
     "*.{json,md,yml,yaml}": [
@@ -151,6 +152,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
+    "@types/conventional-changelog": "^6.0.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
     "@types/vscode": "^1.101.0",
@@ -158,6 +160,7 @@
     "@typescript-eslint/parser": "^8.31.1",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.5.2",
+    "conventional-changelog-cli": "^5.0.0",
     "cspell": "^9.1.2",
     "esbuild": "^0.25.3",
     "eslint": "^9.25.1",
