@@ -126,6 +126,7 @@
     "check-types": "tsc --noEmit",
     "lint": "lint-staged",
     "test": "vitest",
+    "test:ui": "vitest --ui",
     "prepare": "husky",
     "commitlint": "commitlint --edit",
     "commit": "git-cz",
