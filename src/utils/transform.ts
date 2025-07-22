@@ -9,7 +9,10 @@ export function transformVarString(str: string): string[] {
   if (!needToTransformStr) {
     return []
   }
-  const cleanedWords = needToTransformStr.split(' ').map(word => word.replace(/[^a-z0-9]/g, '')) // 去除特殊字符,
+  const cleanedWords = needToTransformStr
+    .replace(/-/g, ' ')
+    .split(' ')
+    .map(word => word.replace(/[^a-z0-9A-Z]/g, '')) // 去除特殊字符,
   const bigCamelCase = cleanedWords
     .map(word => {
       return word.charAt(0).toUpperCase() + word.slice(1)
