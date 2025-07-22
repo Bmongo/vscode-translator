@@ -2,7 +2,7 @@
 
 For various translation scenarios in daily development
 
-[中文文档](./README.zh-CN.md) | [தமிழ் ஆவணம்](./README.ta.md)
+[中文文档](./doc/README.zh-CN.md) | [தமிழ் ஆவணம்](./doc/README.ta.md)
 
 ![Licence](https://img.shields.io/github/license/intellism/vscode-comment-translate.svg)
 
