@@ -71,6 +71,14 @@ Open the translation panel through the `devTranslator.openTranslationPanel` comm
 - Simplified Chinese
 - Tamil
 
+## Contributing
+
+We welcome contributions to this project! Here are some resources to help you get started:
+
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Contributing Guide](./CONTRIBUTING.md)
+- [Development Guide](./DEVELOPMENT.md)
+
 ## Support
 
 If this plugin is helpful to you, you can support us in the following ways:
