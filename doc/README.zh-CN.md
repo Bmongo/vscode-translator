@@ -77,7 +77,7 @@
 
 - [行为准则](../CODE_OF_CONDUCT.md)
 - [贡献指南](../CONTRIBUTING.md)
-- [开发指南](../DEVELOPMENT.md)
+- [开发者指南](../DEVELOPER.md)
 
 ## 支持
 

@@ -77,7 +77,7 @@ We welcome contributions to this project! Here are some resources to help you ge
 
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 - [Contributing Guide](./CONTRIBUTING.md)
-- [Development Guide](./DEVELOPMENT.md)
+- [Developer Guide](./DEVELOPER.md)
 
 ## Support
 

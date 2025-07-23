@@ -77,7 +77,7 @@ If you have an idea for a new feature, please create a new issue on [GitHub Issu
 
 ## Development Guidelines
 
-Please refer to [DEVELOPMENT.md](DEVELOPMENT.md) for detailed information on development setup and workflow.
+Please refer to [DEVELOPER.md](DEVELOPER.md) for detailed information on development setup and workflow.
 
 ## Code Style Guidelines
 
@@ -159,7 +159,7 @@ Documentation improvements are also valuable contributions. If you find errors o
 
 ## Translation Contributions
 
-If you want to add new language support for the extension or improve existing translations, please refer to the "Adding New Language Support" section in [DEVELOPMENT.md](DEVELOPMENT.md).
+If you want to add new language support for the extension or improve existing translations, please refer to the "Adding New Language Support" section in [DEVELOPER.md](DEVELOPER.md).
 
 ## License
 
