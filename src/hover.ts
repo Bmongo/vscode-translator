@@ -22,10 +22,16 @@ export const registerHover = (context: vscode.ExtensionContext) => {
       if (!word) {
         return
       }
-      const selectText = vscode.window.activeTextEditor?.document.getText(
-        vscode.window.activeTextEditor?.selection
-      )
-      const needTranslate = selectText || word
+      const selectedPosition = vscode.window.activeTextEditor?.selection
+      const selectText = vscode.window.activeTextEditor?.document.getText(selectedPosition)
+      let needTranslate = selectText || word
+      if (
+        selectedPosition &&
+        !(position.isBeforeOrEqual(selectedPosition.end) && position.isAfterOrEqual(selectedPosition.start))
+      ) {
+        // 鼠标位置在选中文本之外
+        needTranslate = word
+      }
       const targetType = getTargetLangType(needTranslate)
       try {
         const result = await getTranslator({ from: LANGUAGE.AUTO, to: targetType }).translate(needTranslate)
