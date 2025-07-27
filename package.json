@@ -2,7 +2,7 @@
   "name": "vscode-dev-translator",
   "displayName": "Dev Translator",
   "description": "Translate for developers",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "publisher": "bmongo",
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://github.com/Bmongo/vscode-translator/blob/main/README.md",

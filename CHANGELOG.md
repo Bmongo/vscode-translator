@@ -1,3 +1,14 @@
+## [0.0.9](https://github.com/Bmongo/vscode-translator/compare/v0.0.7...v0.0.9) (2025-07-27)
+
+### Bug Fixes
+
+- delimiter processing error ([2ae490c](https://github.com/Bmongo/vscode-translator/commit/2ae490cfc173f6237e5ff186ae0821252b1299e9))
+
+### Features
+
+- add vitest for unit testing and improve test coverage ([d19d285](https://github.com/Bmongo/vscode-translator/commit/d19d285583dd647ee5d97c0a3d7fbf7a117e2cc1))
+- optimize hover interaction ([a74006c](https://github.com/Bmongo/vscode-translator/commit/a74006c6afc149d6b7c2c3eeb7aa7be952a135b3))
+
 ## [0.0.8](https://github.com/Bmongo/vscode-translator/compare/v0.0.7...v0.0.8) (2025-07-22)
 
 ### Bug Fixes
